@@ -190,7 +190,7 @@ static void OnInit(HWND hDlg)   //----------------------------------------------
 	GetWindowRect(hList, &rc);
 	m_rezCYlist = rc.bottom-rc.top;
 	m_rezCXlist = rc.right-rc.left;
-	rc.bottom = api.GetInt(L"Timers", L"SwSize", 0);
+	rc.bottom = api.GetInt(L"Timers", L"SwSize", 1);
 	if(rc.bottom){
 		SetWindowPos(hDlg, HWND_TOP, 0,0, m_rezCX, rc.bottom, SWP_NOMOVE|SWP_NOZORDER);
 	}
