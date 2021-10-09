@@ -19,8 +19,8 @@ void GetDayOfYearTitle(wchar_t* szTitle, int ivMonths)   //---------------------
 	time_t ts = time(NULL);
 	
 	localtime_r(&ts, &today);
-//	wcsftime(szDoY, 8, L"%#j", &today); // <--{OutPut}--> Day 95
-	wcsftime(szDoY, 8, L"%j", &today);   // <--{OutPut}--> Day 095
+//	wcsftime(szDoY, 8, L"%#j", &today); // <--{OutPut}--> Day 96
+	wcsftime(szDoY, 8, L"%j", &today);   // <--{OutPut}--> Day 096
 	
 	if(api.OS < TOS_VISTA && ivMonths==1) {
 		wsprintf(szTitle, FMT("Calendar:  Day: %s"), szDoY);
