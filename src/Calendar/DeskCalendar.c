@@ -84,7 +84,7 @@ LRESULT CALLBACK Window_Calendar(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lPa
 		MonthCal_GetMinReqRect(hCal,&rc);//size for a single month
 		if(iMonths>1){
 			#define CALBORDER 4
-			#define CALTODAYTEXTHEIGHT 13
+			#define CALTODAYTEXTHEIGHT 14
 			rc.right+=CALBORDER;
 			rc.bottom-=CALTODAYTEXTHEIGHT;
 			if(api.OS <= TOS_XP){
