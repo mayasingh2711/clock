@@ -59,7 +59,7 @@ Schedule* TimetableAdd(int id, time_t ts, unsigned data) {
 		schedule->time = 0;
 	}
 	if(ts != -1) {
-		if(ts <= 86400)
+		if(ts <= 86300)
 			ts = time(NULL) + ts;
 		schedule->time = ts;
 	}
