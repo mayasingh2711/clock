@@ -58,7 +58,7 @@ LRESULT CALLBACK Window_Calendar(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lPa
 		iMonthsPast = api.GetIntEx(L"Calendar", L"ViewMonthsPast", 1);
 		
 		if(api.GetInt(L"Calendar", L"ShowDayOfYear", 1)) {
-			wchar_t szTitle[32];
+			wchar_t szTitle[31];
 			GetDayOfYearTitle(szTitle,iMonths);
 			SetWindowText(hwnd,szTitle);
 		}
