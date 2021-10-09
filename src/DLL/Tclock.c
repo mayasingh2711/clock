@@ -29,7 +29,7 @@ static LRESULT CALLBACK Window_SecondaryTaskbarWorker_Hooked(HWND hwnd, UINT mes
 /*------------------------------------------------
   globals
 --------------------------------------------------*/
-#define MAX_MULTIMON_CLOCKS 4
+#define MAX_MULTIMON_CLOCKS 6
 int m_bMultimon;
 ATOM m_multiClockClass=0;
 typedef struct MultiClock {
